@@ -8,12 +8,12 @@ import os.path
 def do_pack():
     """create a tar of web dir"""
     time = datetime.utcnow()
-    file = "versions/web_static_{}{}{}{}{}{}.tgz".format(dt.year,
-                                                         dt.month,
-                                                         dt.day,
-                                                         dt.hour,
-                                                         dt.minute,
-                                                         dt.second)
+    file = "versions/web_static_{}{}{}{}{}{}.tgz".format(time.year,
+                                                         time.month,
+                                                         time.day,
+                                                         time.hour,
+                                                         time.minute,
+                                                         time.second)
 
     if os.path.isdir(versions) is false:
         if local("mkdir -p versions").failed is true:
