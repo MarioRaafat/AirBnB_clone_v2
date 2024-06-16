@@ -4,7 +4,6 @@ read xx
 chmod +x *.c
 chmod +x *.py
 chmod +x *.js
-chmod +x *.sh
 chmod +x *.html
 chmod +x *.css
 git add .
