@@ -17,7 +17,7 @@ def do_pack():
 
     if os.path.isdir(versions) is false:
         if local("mkdir -p versions").failed is true:
-            return none
+            return None
     if local("tar -cvzf {} web_static".format(file)).failed is True:
         return None
     return file
