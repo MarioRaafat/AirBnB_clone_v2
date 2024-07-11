@@ -1,9 +1,13 @@
+#!/usr/bin/python3
 """This module contains the base model
 the parent for all models in airBnB clone app"""
 from uuid import uuid4
 from datetime import datetime
 from models import storage
+from sqlalchemy import Column, Integer, String, DateTime
+from sqlalchemy.ext.declarative import declarative_base
 
+Base = declarative_base()
 
 class BaseModel:
     """This class is the parent class for all models in the airBnB clone app"""
